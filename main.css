@@ -17,10 +17,19 @@ body {
 
 	}
 
-img {
-		max-width: 100%;
-		height: auto;
-		border-bottom: 4px solid black;
+
+#contactBody img {
+	Height:25vh;
+	Width:30vw;
+	margin-left: 25%;
+	margin-right: 25%;
+
+}
+
+#aboutBody img {
+	max-width: 100%;
+	height: auto;
+	border-bottom: 4px solid black;
 }
 
 .title
@@ -87,23 +96,16 @@ img {
 {
 	display: block;
     border-top: 8px solid black;
-	background-color: white;
-    height: 41pc;
-    line-height: 22px;
-    padding: 4px 6px;
     font-size: 14px;
-    color: #000;
 	clear:both;
-	opacity: .9;
-	text-align: center;
+	opacity: 1;
 	margin-top:  2%;
-	margin-left: 10%;
-	margin-right:10%;
+	margin-left: 20%;
+	margin-right:20%;
 }
 
 .title .datebar {
 	padding-right: 5%;
-	
 }
 
 .title{
@@ -152,11 +154,12 @@ li a:hover {
 
 .grid-container {
 	display: grid;
-	grid-template-columns: 33% 33% 33%;
-	grid-template-rows: 200px 200px;
+	grid-template-columns: 30% 70%;
+	grid-template-rows: 25% 25% 25% 25%;
 	opacity: .9;
-	column-gap: 5px;
 	row-gap:5px;
+	column-gap: 5px;
+	padding-right: 5px;
   }
   
 .grid-item {
@@ -165,4 +168,13 @@ li a:hover {
 	word-wrap: break-word;
 	padding: 30px;
 	text-align: center;
+  }
+
+.grid-container-contact {
+	display: grid;
+	opacity: .9;
+	row-gap: 5px;
+  }
+  
+.grid-item-contact {
   }
