@@ -10,15 +10,28 @@
 
 /* basic elements */
 html, body {
-	height: 99%;
-  
 	display: flex;
 	flex-direction: column;
   }
 
+p{
+	font-size: large;
+	font-weight: bold;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
 body {
-		background-image: url("https://github.com/jakeray/my-project/blob/main/Images/Background.jpg?raw=true");
+		background-image: url("https://github.com/jakeray/my-project/blob/main/Images/Background1.jpg?raw=true");
+		background-size: 1920px 1080px;
+		background-repeat:no-repeat;
+
 	}
+
+img {
+		max-width: 100%;
+		height: auto;
+		border-bottom: 4px solid black;
+}
 
 .title
 {
@@ -32,24 +45,40 @@ body {
     color: #000;
     margin-bottom: 13px;
 	clear:both;
-	opacity: .7;
+	opacity: .9;
 }
 
 .body1
 {
     display: block;
-	border-top: 4px solid black;
-	border-left: 4px solid black;
-	border-right: 4px solid black;
-	border-bottom: 4px solid black;
-	background-color: white;
-    height: 100pc;
     font-size: 14px;
     color: #000;
 	clear:both;
-	opacity: .7;
 }
-.title .datebar { float:right }
+
+#homeBody
+{
+	background-color: white;
+	flex-grow: 1;
+	opacity: .9;
+}
+
+#contactBody
+{
+	display: block;
+    border-top: 8px solid black;
+	background-color: white;
+    height: 41pc;
+    line-height: 22px;
+    padding: 4px 6px;
+    font-size: 14px;
+    color: #000;
+    margin-bottom: 13px;
+	clear:both;
+	opacity: .9;
+}
+
+.title .datebar { float:right}
 .title .name { float:center }
 
 ul.horizontal {
@@ -58,10 +87,16 @@ ul.horizontal {
 	padding: 0;
 	overflow: hidden;
 	background-color: #333;
-	border-bottom: 4px solid maroon;
+	border-bottom: 4px solid black;
   }
+
+ul.vertical {
+	list-style-type: disc;
+	overflow: hidden;
+	border-bottom: 4px solid black;
+}
   
-li {
+li.menuItem {
 	float: left;
   }
 
@@ -82,4 +117,21 @@ li.contact
   /* Change the link color to #111 (black) on hover */
 li a:hover {
 	background-color: #111;
+  }
+
+  .grid-container {
+	display: grid;
+	grid-template-columns: 33% 33% 33%;
+	grid-template-rows: 200px 200px;
+	opacity: .9;
+	column-gap: 5px;
+	row-gap:5px;
+  }
+  
+  .grid-item {
+	font-size: 40pt;
+	overflow: hidden; 
+	word-wrap: break-word;
+	padding: 30px;
+	text-align: center;
   }

@@ -8,25 +8,58 @@
 </head>
 
 <body>
-    <div class="title">
-        <span class="name">Jake Ray's Portfolio</span>
-        <span class="datebar" id="date">01/01/1900</span>
-    </div>
     <div class="body1">
+        <!--Menu Bar  -->
+        <div>
             <ul class="horizontal">
-                <li>
-                    <a href="javascript:void(0)">Home</a>
+                <li class="menuItem">
+                    <a href="javascript:void(0)" onclick="clickHome()">Home</a>
                 </li>
-                <li>
-                    <a href="javascript:void(0)">Projects</a>
+                <li class="menuItem">
+                    <a href="javascript:void(0)" onclick="clickProjects()">Projects</a>
                 </li>
-                <li>
-                    <a href="javascript:void(0)">About</a>
+                <li class="menuItem">
+                    <a href="javascript:void(0)" onclick="clickAbout()">About</a>
                 </li>
                 <li class="contact">
-                    <a href="javascript:void(0)">Contact</a>
+                    <a href="javascript:void(0)" onclick="clickContact()">Contact</a>
                 </li>
             </ul>
+        </div>
+
+        <div class="title">
+            <span class="datebar" id="date">01/01/1900</span>
+        </div>
+        <!-- Body -->
+        <div class="bod1" id="homeBody">
+            <p>Hello my name is Jake ray, I am an IT professional located in Metro Detroit Michigan.
+            <p>Some of my main hobbies include</p>
+            <ul class="vertical">
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+            </ul>
+        </div>
+        <div class="body1" id="projectsBody">
+            <div class="grid-container">
+                <div class="grid-item" style="background-color:white">Fantasy Football Stats</div>
+                <div class="grid-item" style="background-color:grey"></div>
+                <div class="grid-item" style="background-color:white"></div>
+                <div class="grid-item" style="background-color:grey"></div>
+                <div class="grid-item" style="background-color:white"></div>
+                <div class="grid-item" style="background-color:grey"></div>
+              </div>
+        </div>
+        <div class="body1" id="aboutBody">
+            <img src="https://github.com/jakeray/my-project/blob/main/Images/SanFran.jpg?raw=true">
+            <img src="https://github.com/jakeray/my-project/blob/main/Images/FamWalk.JPG?raw=true">
+            <img src="https://github.com/jakeray/my-project/blob/main/Images/MeAndJenn.JPG?raw=true">
+        </div>
+        <div class="body1" id="contactBody">
+            <h1>Contact Me</h1>
+            <p>https://www.linkedin.com/in/jacob-ray-4ba0b2a1/</p>
+            <p><a href='mailto:jacob.ray.cs@gmail.com'>Jacob.Ray.CS@gmail.com</a></p>
+        </div>
     </div>
    
     <script src="app.js"></script>
